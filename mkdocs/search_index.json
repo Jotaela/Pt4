@@ -1,0 +1,44 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Dominis amb interf\u00edcie gr\u00e0fica\n\n\n1. Validar un equip client al domini:\n\n\n\n\nEl primer pas a seguir ser\u00e0 entrar dins de l'administrador de l'equip i usar l'opci\u00f3 \nCambiar configuraci\u00f3n\n del apartat \nConfiguraci\u00f3n de nombre, dominio y grupo de trabajo\n.\n\n\n  \n\n\nAqu\u00ed canviarem el grup de treball actual pel nou domini amb l'opci\u00f3 \ncambiar...\n.\n\n\n  \n\n\nSel\u00b7leccionarem \nDominio\n i escriurem el nom del domini. Seguidament li donarem a \naceptar\n. (Els canvis es completaran al reiniciar el PC)\n\n\n  \n\n\n\n\n2. Fer que un usuari normal del domini pugui ser administrador d\u2019un equip local:\n\n\n\n\nEl primer \u00e9s accedir al men\u00fa de \nUsuarios y equipos de Activa Directory\n\n\n  \n\n\nUn cop estem dins ens mourem a la UO on tenim els equips i farem \nclic dret\n -> \npropiedades\n sobre el sostre equip:\n\n\n  \n\n\nD'aquesta manera ens situarem en el men\u00fa d'administraci\u00f3 de l'equip local. Si ens movem a \nUsuarios y grupos locales\n -> \nGrupos\n -> \nAdministradores\n, podrem adjuntar al grup al nostre usuari en q\u00fcesti\u00f3.\n\n\n\n\n  \n\n\n\n\n1. Crear carpetes d'usuaris (Es pot fer de tres formes diferents):\n\n\n1. La primera de les formes seria convertir la carpeta documents del client en la carpeta d'usuari:\n\n\n\n\nPrimer hem de crear una carpeta amb el nom de l'usuari a l'arrel del servidor:\n\n\n\n-Seguidament l'haurem de compartir amb l'usuari en questi\u00f3 i donar-li els permisos pertinents per a que pugui accedir:\n\n\n\n\n  \n\n\nTamb\u00e9 li hem de donar permissos locals, tot i que la connexi\u00f3 a la carpeta sigui remota.\n\n  \n\n\nFinalment, un cop ja hem compartit el recurs ja podem accedir al client i canviar la ubicaci\u00f3 de la carpeta documentos per la del recurs compartit:\n\n  \n\n\n\n\n2. La segona seria assignar-li la carpeta personal des del servidor.\n\n\n\n\nPrimer hem d'accedir a l'eina de gestor d'usuaris i equips del Winows Server. Des d'all\u00ed anirem a les \npropietats\n del usuari en q\u00fcesti\u00f3 -> \nPerfil\n. \u00c9s aqu\u00ed on assignarem una lletra i el nom dle recurs al apartat de Carpeta particular:\n\n\n  \n\n\nsi ara iniciem sessi\u00f3 amb l'usuari ens surtira la crpeta dins de \nEste equipo\n:\n\n\n  \n\n\n\n\n3. L'ultima de les forme de crear la carpeta personal \u00e9s ferho amb un script.\n\n\n\n\nPrimer Crearem un arxiuanomenat logon.bat a la carpeta compartida \n\\netlogon\n:\n\n\nDins de l'arxiu escriurem el seg\u00fcent codi :\nnet use Z: \\\\nomequipserver\\%username%\n\n\n  \n\n\nAra accedirem a l'eina de gestor d'usuaris i equips del Winows Server. Des d'all\u00ed anirem a les \npropietats\n del usuari en q\u00fcesti\u00f3 -> \nPerfil\n. Aqu\u00ed escriurem el nom del script en la casella de \nScript de inicio de sesi\u00f3n\n:\n\n  \n\n\nAl entrar al compte amb l'usuari podrem veure la carpeta personal dins de \neste equipo\n:",
+            "title": "Home"
+        },
+        {
+            "location": "/#dominis-amb-interficie-grafica",
+            "text": "",
+            "title": "Dominis amb interf\u00edcie gr\u00e0fica"
+        },
+        {
+            "location": "/#1-validar-un-equip-client-al-domini",
+            "text": "El primer pas a seguir ser\u00e0 entrar dins de l'administrador de l'equip i usar l'opci\u00f3  Cambiar configuraci\u00f3n  del apartat  Configuraci\u00f3n de nombre, dominio y grupo de trabajo .      Aqu\u00ed canviarem el grup de treball actual pel nou domini amb l'opci\u00f3  cambiar... .      Sel\u00b7leccionarem  Dominio  i escriurem el nom del domini. Seguidament li donarem a  aceptar . (Els canvis es completaran al reiniciar el PC)",
+            "title": "1. Validar un equip client al domini:"
+        },
+        {
+            "location": "/#2-fer-que-un-usuari-normal-del-domini-pugui-ser-administrador-dun-equip-local",
+            "text": "El primer \u00e9s accedir al men\u00fa de  Usuarios y equipos de Activa Directory      Un cop estem dins ens mourem a la UO on tenim els equips i farem  clic dret  ->  propiedades  sobre el sostre equip:      D'aquesta manera ens situarem en el men\u00fa d'administraci\u00f3 de l'equip local. Si ens movem a  Usuarios y grupos locales  ->  Grupos  ->  Administradores , podrem adjuntar al grup al nostre usuari en q\u00fcesti\u00f3.",
+            "title": "2. Fer que un usuari normal del domini pugui ser administrador d\u2019un equip local:"
+        },
+        {
+            "location": "/#1-crear-carpetes-dusuaris-es-pot-fer-de-tres-formes-diferents",
+            "text": "",
+            "title": "1. Crear carpetes d'usuaris (Es pot fer de tres formes diferents):"
+        },
+        {
+            "location": "/#1-la-primera-de-les-formes-seria-convertir-la-carpeta-documents-del-client-en-la-carpeta-dusuari",
+            "text": "Primer hem de crear una carpeta amb el nom de l'usuari a l'arrel del servidor:  \n-Seguidament l'haurem de compartir amb l'usuari en questi\u00f3 i donar-li els permisos pertinents per a que pugui accedir:       Tamb\u00e9 li hem de donar permissos locals, tot i que la connexi\u00f3 a la carpeta sigui remota.     Finalment, un cop ja hem compartit el recurs ja podem accedir al client i canviar la ubicaci\u00f3 de la carpeta documentos per la del recurs compartit:",
+            "title": "1. La primera de les formes seria convertir la carpeta documents del client en la carpeta d'usuari:"
+        },
+        {
+            "location": "/#2-la-segona-seria-assignar-li-la-carpeta-personal-des-del-servidor",
+            "text": "Primer hem d'accedir a l'eina de gestor d'usuaris i equips del Winows Server. Des d'all\u00ed anirem a les  propietats  del usuari en q\u00fcesti\u00f3 ->  Perfil . \u00c9s aqu\u00ed on assignarem una lletra i el nom dle recurs al apartat de Carpeta particular:      si ara iniciem sessi\u00f3 amb l'usuari ens surtira la crpeta dins de  Este equipo :",
+            "title": "2. La segona seria assignar-li la carpeta personal des del servidor."
+        },
+        {
+            "location": "/#3-lultima-de-les-forme-de-crear-la-carpeta-personal-es-ferho-amb-un-script",
+            "text": "Primer Crearem un arxiuanomenat logon.bat a la carpeta compartida  \\netlogon : \nDins de l'arxiu escriurem el seg\u00fcent codi : net use Z: \\\\nomequipserver\\%username%      Ara accedirem a l'eina de gestor d'usuaris i equips del Winows Server. Des d'all\u00ed anirem a les  propietats  del usuari en q\u00fcesti\u00f3 ->  Perfil . Aqu\u00ed escriurem el nom del script en la casella de  Script de inicio de sesi\u00f3n :     Al entrar al compte amb l'usuari podrem veure la carpeta personal dins de  este equipo :",
+            "title": "3. L'ultima de les forme de crear la carpeta personal \u00e9s ferho amb un script."
+        }
+    ]
+}

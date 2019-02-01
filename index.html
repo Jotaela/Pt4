@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <title>My Docs</title>
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href=".">My Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#dominis-amb-interficie-grafica">Dominis amb interfície gràfica</a></li>
+            <li><a href="#1-validar-un-equip-client-al-domini">1. Validar un equip client al domini:</a></li>
+            <li><a href="#2-fer-que-un-usuari-normal-del-domini-pugui-ser-administrador-dun-equip-local">2. Fer que un usuari normal del domini pugui ser administrador d’un equip local:</a></li>
+            <li><a href="#1-crear-carpetes-dusuaris-es-pot-fer-de-tres-formes-diferents">1. Crear carpetes d'usuaris (Es pot fer de tres formes diferents):</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="dominis-amb-interficie-grafica">Dominis amb interfície gràfica</h1>
+<h2 id="1-validar-un-equip-client-al-domini">1. Validar un equip client al domini:</h2>
+<ul>
+<li>El primer pas a seguir serà entrar dins de l'administrador de l'equip i usar l'opció <code>Cambiar configuración</code> del apartat <code>Configuración de nombre, dominio y grupo de trabajo</code>.<br />
+<img alt="foto1" src="./img/Selecció_650.png" />  </li>
+<li>Aquí canviarem el grup de treball actual pel nou domini amb l'opció <code>cambiar...</code>.<br />
+<img alt="foto2" src="./img/Selecció_651.png" />  </li>
+<li>Sel·leccionarem <code>Dominio</code> i escriurem el nom del domini. Seguidament li donarem a <code>aceptar</code>. (Els canvis es completaran al reiniciar el PC)<br />
+<img alt="foto3" src="./img/Selecció_652.png" />  </li>
+</ul>
+<h2 id="2-fer-que-un-usuari-normal-del-domini-pugui-ser-administrador-dun-equip-local">2. Fer que un usuari normal del domini pugui ser administrador d’un equip local:</h2>
+<ul>
+<li>El primer és accedir al menú de <code>Usuarios y equipos de Activa Directory</code><br />
+<img alt="foto4" src="./img/Selecció_655.png" />  </li>
+<li>Un cop estem dins ens mourem a la UO on tenim els equips i farem <code>clic dret</code> -&gt; <code>propiedades</code> sobre el sostre equip:<br />
+<img alt="foto5" src="./img/Selecció_656.png" />  </li>
+<li>D'aquesta manera ens situarem en el menú d'administració de l'equip local. Si ens movem a <code>Usuarios y grupos locales</code> -&gt; <code>Grupos</code> -&gt; <code>Administradores</code>, podrem adjuntar al grup al nostre usuari en qüestió.<br />
+<img alt="foto6" src="./img/Selecció_658.png" /><br />
+<img alt="foto7" src="./img/Selecció_657.png" />  </li>
+</ul>
+<h2 id="1-crear-carpetes-dusuaris-es-pot-fer-de-tres-formes-diferents">1. Crear carpetes d'usuaris (Es pot fer de tres formes diferents):</h2>
+<h3 id="1-la-primera-de-les-formes-seria-convertir-la-carpeta-documents-del-client-en-la-carpeta-dusuari">1. La primera de les formes seria convertir la carpeta documents del client en la carpeta d'usuari:</h3>
+<ul>
+<li>Primer hem de crear una carpeta amb el nom de l'usuari a l'arrel del servidor:<br />
+<img alt="foto8" src="./img/Selecció_672.png" /><br />
+-Seguidament l'haurem de compartir amb l'usuari en questió i donar-li els permisos pertinents per a que pugui accedir:<br />
+<img alt="foto9" src="./img/Selecció_673.png" /><br />
+<img alt="foto10" src="./img/Selecció_674.png" />  </li>
+<li>També li hem de donar permissos locals, tot i que la connexió a la carpeta sigui remota.
+<img alt="foto11" src="./img/Selecció_675.png" />  </li>
+<li>Finalment, un cop ja hem compartit el recurs ja podem accedir al client i canviar la ubicació de la carpeta documentos per la del recurs compartit:
+<img alt="foto12" src="./img/Selecció_676.png" />  </li>
+</ul>
+<h3 id="2-la-segona-seria-assignar-li-la-carpeta-personal-des-del-servidor">2. La segona seria assignar-li la carpeta personal des del servidor.</h3>
+<ul>
+<li>Primer hem d'accedir a l'eina de gestor d'usuaris i equips del Winows Server. Des d'allí anirem a les <code>propietats</code> del usuari en qüestió -&gt; <code>Perfil</code>. És aquí on assignarem una lletra i el nom dle recurs al apartat de Carpeta particular:<br />
+<img alt="foto13" src="./img/Selecció_677.png" />  </li>
+<li>si ara iniciem sessió amb l'usuari ens surtira la crpeta dins de <code>Este equipo</code>:<br />
+<img alt="foto14" src="./img/Selecció_678.png" />  </li>
+</ul>
+<h3 id="3-lultima-de-les-forme-de-crear-la-carpeta-personal-es-ferho-amb-un-script">3. L'ultima de les forme de crear la carpeta personal és ferho amb un script.</h3>
+<ul>
+<li>Primer Crearem un arxiuanomenat logon.bat a la carpeta compartida <code>\netlogon</code>:
+<img alt="foto15" src="./img/Selecció_689.png" /><br />
+Dins de l'arxiu escriurem el següent codi :<code>net use Z: \\nomequipserver\%username%</code><br />
+<img alt="foto16" src="./img/Selecció_690.png" />  </li>
+<li>Ara accedirem a l'eina de gestor d'usuaris i equips del Winows Server. Des d'allí anirem a les <code>propietats</code> del usuari en qüestió -&gt; <code>Perfil</code>. Aquí escriurem el nom del script en la casella de <code>Script de inicio de sesión</code>:
+<img alt="foto17" src="./img/Selecció_691.png" />  </li>
+<li>Al entrar al compte amb l'usuari podrem veure la carpeta personal dins de <code>este equipo</code>:<br />
+<img alt="foto18" src="./img/Selecció_692.png" />  </li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '.';</script>
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+        <script src="./js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 0.16.3
+Build Date UTC : 2019-02-01 13:09:29
+-->
